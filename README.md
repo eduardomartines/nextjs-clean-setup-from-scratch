@@ -1,5 +1,7 @@
 # nextjs-clean-setup-from-scratch
 
+Next.js with a clean setup built from scratch, fully integrated with VS Code and Docker.
+
 * Next.js
 * Typescript
 * Storybook
@@ -10,16 +12,23 @@
 * Prettier
 * Husky
 * LintStaged
+* Docker Compose
 * .gitignore
 * .vscode
 
 ## Running app
 
-### Using VsCode
+### A) Using VsCode
 
 Just run `Launch Chrome for App`, and Chrome will open automatically.
 
-### Using command line
+### B) Using Docker Compose command line
+
+```sh
+$ docker-compose up nextjs_app
+```
+
+### C) Using Yarn command line
 
 ```sh
 $ yarn dev
@@ -28,11 +37,17 @@ and hit http://localhost:3000.
 
 ## Running Storybook
 
-### Using VsCode
+### A) Using VsCode
 
 Just run `Launch Chrome for Storybook`, and Chrome will open automatically.
 
-### Using command line
+### B) Using Docker Compose command line
+
+```sh
+$ docker-compose up nextjs_storybook
+```
+
+### C) Using command line
 
 ```sh
 $ yarn storybook
